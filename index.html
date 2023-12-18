@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translator App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+    <script src="countries.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea class="from-text" placeholder="Enter text"></textarea>
+          <textarea
+            class="to-text"
+            placeholder="Traslation"
+            readonly
+            disabled
+          ></textarea>
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up"></i>
+              <div style="position: relative">
+                <i id="from" class="fas fa-copy"></i>
+                <div class="copied-translation">
+                  <h4>Traducción copiada</h4>
+                </div>
+              </div>
+            </div>
+            <select></select>
+          </li>
+          <li class="exchange">
+            <i class="fas fa-exchange-alt"></i>
+          </li>
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up"></i>
+              <div style="position: relative">
+                <i id="to" class="fas fa-copy"></i>
+                <div class="copied-translation">
+                  <h4>Traducción copiada</h4>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button>Translate Text</button>
+    </div>
+  </body>
+</html>
